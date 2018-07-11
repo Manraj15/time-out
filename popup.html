@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="popup.css">
+	</head>
+	<body>
+	
+		<form action = "/form-page" method = "post">
+			<label for  = 'URL'>URL:</label> <input type="text" id = "URL" name="site_url">
+			<button type = "submit" id = 'subButton'>Submit</button>
+		</form>
+		
+		<p class = 'message'>By default, each website is unblocked for 15 minutes every 30 minutes. Click Configure to change this.</p>
+
+		<div id = "grid-containor">
+			
+		</div>
+
+		<button id = 'configButton'>Configure</button>
+
+		<button id = 'history'>View Frequent Websites</button>
+
+		<div id = 'historyDiv'>
+			<a href = 'javascript:void(0)' class = 'closeBtn'>&times</a>
+			<table id = 'histTable'>
+				<tr>
+					<th>Website Name</th>
+					<th>Time Spent (mins)</th>
+				</tr>
+			</table>
+		</div>
+
+
+		<script src = "popup.js"></script>
+	</body>
+</html>
